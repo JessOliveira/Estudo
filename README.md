@@ -41,7 +41,7 @@ The following is an example of the Hello world program written in Magik:
  Magik variables are not typed as they are in say C# and can reference different objects at runtime. Everything in Magik is an object (there is no distinction between objects and primitive types such as integers):
 ```
    a << 1.2     # a floating point number is assigned to variable 'a'
-   a << "1.2"   # later, a string is assigned to variable 'a' 
+   a << "1.2"   # later, a string is assigned to variable 'a'
 ```
 
 ## Objects
@@ -71,7 +71,7 @@ The following is an example of the Hello world program written in Magik:
 
    a << "hello"
    b << a = b # returns True (_true) because the values of a and b are equal
-   a _is b # returns True (_true) because b was assigned the specific instance of the same object as a, rather than the value of a. 
+   a _is b # returns True (_true) because b was assigned the specific instance of the same object as a, rather than the value of a.
    ```
   If sentences
 ```
@@ -88,13 +88,13 @@ The following is an example of the Hello world program written in Magik:
 
   _else
 
-  _endif 
+  _endif
   ```
   Logical and, or inside if sentences are `_andif` and `_orif`
 ```
   _if z _is _true _andif z _isnt _unset _then
 
-  _endif 
+  _endif
   ```
 
 ## Methods
@@ -218,11 +218,11 @@ There is no while sentence in magik. To create a similar loop sentence could be 
 ```
  x << 0
   _loop
-		_if x < 5
-		  write(x)
+    _if x < 5
+      write(x)
       x +<< 1  # is equal to += in others programming languages
-		_endif
-	_endloop
+    _endif
+  _endloop
 ```
 
 ## Global variables
@@ -250,7 +250,7 @@ _endmethod
      _return a + b + c
    _endproc
 
-   x << my_procedure(1, 2, 3) # x = 6 
+   x << my_procedure(1, 2, 3) # x = 6
    ```
 
   The most common used of procedure is:
@@ -262,7 +262,7 @@ _endmethod
         _endproc
     _endloop
   ```
-  
+
 ## Threads
 In computer science, a thread of execution is the smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system.[1] The implementation of threads and processes differs between operating systems, but in most cases a thread is a component of a process. Multiple threads can exist within one process, executing concurrently and sharing resources such as memory, while different processes do not share these resources. In particular, the threads of a process share its executable code and the values of its variables at any given time.
 
