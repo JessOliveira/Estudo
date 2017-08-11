@@ -315,3 +315,15 @@ _method threadpoc.runnable(arg)
 _endmethod
 $
 ```
+## Try 
+```
+_for i _over 1.upto(10)
+_loop @name
+  _try _with error
+    # do something
+  _when error
+    write("message")
+    _leave @name
+  _endtry
+_endloop
+```
